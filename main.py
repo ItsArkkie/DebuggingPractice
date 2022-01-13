@@ -56,7 +56,7 @@ def clear():
 
 # goes to the main page of the site and grabs all of the genres listed on the left hand side
 def get_genre_list():
-  books_page = requests.get(books_to_scrape)
+  books_page = requests.get(books_to_scrape_url)
   soup = BeautifulSoup(books_page.content, 'html.parser')
   full_genre_list = soup.find(class_='side_categories').ul.li.ul
 
