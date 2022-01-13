@@ -193,7 +193,7 @@ def search():
   search_history.append(search_text)
 
   # Only go and grab books if there is search text present
-  if not search_tex:
+  if not search_text:
     selected_genre = request.form.get('genre-filter')
     sort_direction = request.form.get('sort-type')
 
