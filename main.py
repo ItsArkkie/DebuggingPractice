@@ -65,7 +65,7 @@ def get_genre_list():
     genre = item.a.get_text().strip()
     id = genre.lower().replace(' ', '-')
     return {
-      name: genre,
+      'name': genre,
       id: f'{id}_{idx + 2}'
     }
   full_genre_list = map(full_genre_list.find_all('li'), get_genres)[0]
